@@ -10,23 +10,65 @@
 	<title>Sign Up</title>
 </head>
 <body>
-	<div class="content">
-		<div class="backgroundImage">
-			<div class="backgroundBanner">
-				<img class="backgroundImageIcon" src="assets/odin-lined.png">
-				Odin
-			</div>
-			<div class="backgroundImageSource">
-				Photo by <a href="https://unsplash.com/@justindkauffman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Justin Kauffman</a> on <a href="https://unsplash.com/collections/G4DLtUFuxlg/green-nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-			</div>
+	<div class="hero-image">
+		<div class="background-banner">
+			<img class="hero-image-icon" src="assets/odin-lined.png">
+			Odin
 		</div>
-		<div class="formContent">
-			<p>
-				This is not a real online service! You know you need something 
-				like this in your life to help you realize your deepest dreams.<br>
-				Sign up now to get started.
-			</p>
+		<div class="hero-image-source">
+			Photo by <a href="https://unsplash.com/@justindkauffman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Justin Kauffman</a> on <a href="https://unsplash.com/collections/G4DLtUFuxlg/green-nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 		</div>
 	</div>
+	<main>
+		<div class="description">
+			<p>
+				This is not a real online service! You know you need something <br/>
+				like this in your life to help you realize your deepest dreams. <br/>
+				Sign up now to get started.
+			</p>
+			<p>You know you want to.</p>
+		</div>
+
+		<form method="post" action="http://httpbin.org/post">
+			<div class="form-container">
+				<div class="fieldset-caption">Lets do this!</div>
+				<fieldset>
+					<div class="fieldset-cell">
+						<label for="firstNameInput">First Name</label>
+						<input id="firstNameInput"/>
+					</div>
+					<div class="fieldset-cell">
+						<label for="lastNameInput">Last Name</label>
+						<input id="lastNameInput"/>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="fieldset-cell">
+						<label for="emailInput">EMail</label>
+						<input id="emailInput" type="email"/>
+					</div>
+					<div class="fieldset-cell">
+						<label for="phoneNumberInput">Phone Number</label>
+						<input id="phoneNumberInput" type="tel"/>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="fieldset-cell">
+						<label for="passwordInput">Password</label>
+						<input id="passwordInput" type="password"/>
+					</div>
+					<div class="fieldset-cell">
+						<label for="confirmPasswordInput">Confirm Password</label>
+						<input id="confirmPasswordInput" type="password"/>
+					</div>
+				</fieldset>
+			</div>
+
+			<div class="form-footer">
+				<button type="submit">Create Account</button>
+				<p>Already have an account? <a href="http://httpbin.org/post">Log in</a></p>
+			</div>
+		</form>
+	</main>
 </body>
 </html>
