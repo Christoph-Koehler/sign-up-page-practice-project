@@ -22,7 +22,7 @@
 	<main>
 		<div class="description">
 			<p>
-				This is not a real online service! You know you need something <br/>
+				This is not a real online service! You know you need something
 				like this in your life to help you realize your deepest dreams. <br/>
 				Sign up now to get started.
 			</p>
@@ -55,18 +55,19 @@
 				<fieldset>
 					<div class="fieldset-cell">
 						<label for="passwordInput">Password</label>
-						<input id="passwordInput" type="password"/>
+						<input id="passwordInput" class="input-error" type="password"/>
+						<p class="error-message">* Passwords do not match</p>
 					</div>
 					<div class="fieldset-cell">
 						<label for="confirmPasswordInput">Confirm Password</label>
-						<input id="confirmPasswordInput" type="password"/>
+						<input id="confirmPasswordInput" class="input-error" type="password"/>
 					</div>
 				</fieldset>
 			</div>
 
 			<div class="form-footer">
 				<button type="submit">Create Account</button>
-				<p>Already have an account? <a href="http://httpbin.org/post">Log in</a></p>
+				<p class="login-link">Already have an account? <a href="http://httpbin.org/post">Log in</a></p>
 			</div>
 		</form>
 	</main>

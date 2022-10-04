@@ -13,6 +13,7 @@ body{
 }
 
 .hero-image {
+	width: 60%;
 	position: relative;
 	flex-grow: 1;
 	background-image: url("assets/justin-kauffman-7_tRMnxWsUg-unsplash.jpg");
@@ -27,8 +28,8 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 2.5vw;
 	width: 100%;
+	gap: 2.5vw;
 	height: 12rem;
 	background-color: rgba(0, 0, 0, 0.6);
 	color: #f8f8f8;
@@ -60,7 +61,14 @@ main {
 }
 
 .description {
-	margin: 0rem 1.5rem 2rem 3rem;
+	margin: 0rem 0rem 2rem 3rem;
+	padding-right: 5rem;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.description p {
+	max-width: 1300px;
 }
 
 .form-container {
@@ -68,6 +76,10 @@ main {
 	margin-bottom: 1.5rem;
 	background-color: #ffffff;
 	box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.fieldset-caption {
+	display: block;
 }
 
 fieldset {
@@ -83,12 +95,15 @@ fieldset {
 	flex-direction: column;
 }
 
-.main > a:link, a:visited {
-	color: #596D48;
+.fieldset-cell > label {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #3b3b3b;
+	font-size: 9pt;
 }
 
-form > label {
-	text-transform: uppercase;
+.main > a:link, a:visited {
+	color: #596D48;
 }
 
 form input {
@@ -98,7 +113,7 @@ form input {
 	padding: 6px;
 }
 
-form input:focus {
+form input:focus, input:focus-within, input:focus-visible {
 	border-color: blue;
 }
 
@@ -106,8 +121,15 @@ form input:focus {
 	margin: 0rem 1.5rem 0rem 3rem;
 }
 
-.fieldset-caption {
-	display: block;
+.input-error {
+	border: 1px solid red;
+}
+
+.error-message {
+	color: red;
+	margin-top: 0.25rem;
+	margin-bottom: 0rem;
+	font-size: 8.5pt;
 }
 
 button[type="submit"] {
@@ -118,4 +140,8 @@ button[type="submit"] {
 	height: 35px;
 	color: white;
 	font-weight: bold;
+} 
+
+.login-link {
+	font-size: 10pt;
 }
